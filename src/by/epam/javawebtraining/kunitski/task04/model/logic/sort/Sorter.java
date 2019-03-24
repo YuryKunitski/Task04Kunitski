@@ -10,11 +10,6 @@ public class Sorter {
 
   private static LengthComparator comparator = new LengthComparator();
 
-  /**
-   * method increaseText return string  sentences which
-   * arranged in order of increasing sentence length.
-   */
-
   private static List<Composite> findSentence(Composite text) {
 
     List<Composite> list = new ArrayList<>();
@@ -35,7 +30,7 @@ public class Sorter {
 
 
   /**
-   * method increaseText return string  sentences which
+   * this method return string  sentences which
    * arranged in order of increasing sentence length.
    */
 
@@ -53,7 +48,7 @@ public class Sorter {
 
   /**
    * method increaseText return string  sentences which
-   * arranged in order of increasing sentence length.
+   * arranged in order of decreasing sentence length.
    */
 
   public static String decreaseTextLength(Composite text) {
