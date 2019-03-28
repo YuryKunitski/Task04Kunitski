@@ -1,7 +1,6 @@
 package by.epam.javawebtraining.kunitski.task04.controller;
 
-import by.epam.javawebtraining.kunitski.task04.model.entity.Composite;
-import by.epam.javawebtraining.kunitski.task04.model.logic.sort.Sorter;
+import by.epam.javawebtraining.kunitski.task04.model.entity.Base;
 import by.epam.javawebtraining.kunitski.task04.model.parser.ParagraphParser;
 import by.epam.javawebtraining.kunitski.task04.model.parser.Parsable;
 import by.epam.javawebtraining.kunitski.task04.model.parser.SentenceParser;
@@ -21,7 +20,7 @@ public class Main {
 
     String textFromFile = Reader.readFile(inputPath);
     Parsable parser = new ParagraphParser(new SentenceParser(new WordParser()));
-    Composite wholeText = parser.parse(textFromFile);
+    Base wholeText = parser.parse(textFromFile);
 
     FilePrinter filePrinter = new FilePrinter(outputPath);
     filePrinter.print(wholeText);
@@ -30,6 +29,7 @@ public class Main {
 //    Changer.changeFstWordLst(wholeText);
 //    printer.print("\n"+wholeText);
 //    printer.print(Sorter.increaseTextLength(wholeText));
-    printer.print(Sorter.decreaseTextLength(wholeText));
+   printer.print(wholeText);
+//    printer.print(wholeText.getTextType() + " " + wholeText.get(1) + " " + wholeText.get(2) + " " + wholeText.get(3));
   }
 }

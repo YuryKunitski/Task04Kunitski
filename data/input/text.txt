@@ -1,8 +1,9 @@
 Autoboxing and Unboxing. 
+ 
 Autoboxing is the automatic conversion that the Java compiler makes between the primitive types 
 and their corresponding object wrapper classes. For example, converting an int to an Integer, a 
 double to a Double, and so on. If the conversion goes the other way, this is called unboxing. 
-Here is the simplest example of autoboxing: 
+Here is the simplest example of autoboxing:
  
 Character ch = 'a'; 
  
@@ -82,4 +83,4 @@ The program prints the following:
 absolute value of -8 = 8 
 pi = 3.1416 
  
-Autoboxing and unboxing lets developers write cleaner code, making it easier to read. 
+Autoboxing and unboxing lets developers write cleaner code, making it easier to read.

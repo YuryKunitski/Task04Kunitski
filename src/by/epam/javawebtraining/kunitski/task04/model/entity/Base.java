@@ -20,5 +20,7 @@ public abstract class Base {
     return textType;
   }
 
+  public Base get(int index) {return null;}
+
   public abstract String toString();
 }
